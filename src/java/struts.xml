@@ -128,16 +128,16 @@
         <action name="registroDual" class="action.PrincipalAction" method="registroDual">
          
             <result name="SUCCESS">/pages/registrodual.jsp</result>			              
-            <result name="ERROR">/pages/login.jsp</result>
-            <result name="input">/pages/login.jsp</result>
+            <result name="ERROR">/pages/registrodual.jsp</result>
+            <result name="input">/pages/registrodual.jsp</result>
             <result name="SESSION" type="chain">CerrarSesion</result>
         </action>
         
         <action name="BuscarRFC" class="action.PrincipalAction" method="BuscarRFC">
          
             <result name="SUCCESS">/pages/registrodual.jsp</result>			              
-            <result name="ERROR">/pages/login.jsp</result>
-            <result name="input">/pages/login.jsp</result>
+            <result name="ERROR">/pages/registrodual.jsp</result>
+            <result name="input">/pages/registrodual.jsp</result>
             <result name="SESSION" type="chain">CerrarSesion</result>
         </action>
         
@@ -193,8 +193,8 @@
         
         <action name="registroBeca" class="action.PrincipalAction" method="registroBeca">    
             <result name="SUCCESS">/pages/registroBeca.jsp</result>			              
-            <result name="ERROR">/pages/login.jsp</result>
-            <result name="input">/pages/login.jsp</result>
+            <result name="ERROR">/pages/registroBeca.jsp</result>
+            <result name="input">/pages/registroBeca.jsp</result>
             <result name="SESSION" type="chain">CerrarSesion</result>
         </action>
         <action name="AgregarBeca" class="action.PrincipalAction" method="GuardarBeca">   

@@ -183,6 +183,7 @@ public class RegistraAlumnosAction extends ActionSupport implements SessionAware
                     service = new ConsultaDatosRenapo();
                     port = service.getConsultaRenapoPorCurpPort();
                     personas = port.consultaPorCurp(al.getCURPA());
+                 
                     //port.consultaPorCurp(micurp)
                     
                     Constantes.enviaMensajeConsola("resultado de renapo"+personas.getResultado());
@@ -196,12 +197,21 @@ public class RegistraAlumnosAction extends ActionSupport implements SessionAware
                         al.setAPELLIDOM(personas.getApellidoMaterno());
                         al.setFECNAC(personas.getFechaNacimientoAxu());
                         al.setCURP(personas.getCurp());
-
+                        
                         if (personas.getSexo().equals("H")) {
                             al.setSEXO("HOMBRE");
                         } else {
                             al.setSEXO("MUJER");
                         }
+                        
+                        Constantes.enviaMensajeConsola("nombre:" +al.getNOMBRE());
+                        Constantes.enviaMensajeConsola("apellido p" + al.getAPELLIDOP());
+                        Constantes.enviaMensajeConsola("apellido m "+ al.getAPELLIDOM());
+                        Constantes.enviaMensajeConsola("fecha nac "+ al.getFECNAC() );
+                        Constantes.enviaMensajeConsola("curp: "+al.getCURP());
+                        Constantes.enviaMensajeConsola("Nacionalidad "+personas.getNacionalidad());
+                        Constantes.enviaMensajeConsola("cveEntidad: "+personas.getCveEntidadNacimiento());
+                        
 
                         obj.setCCT(usuariocons.getUSUARIO());
 

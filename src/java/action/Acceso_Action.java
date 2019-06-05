@@ -301,11 +301,6 @@ public class Acceso_Action extends ActionSupport implements SessionAware {
                        
                     ListaAlumnosReingresos= con.listaAlumnosReingreso(datos);
                     
-                    
-                  
-                    
-                    
-
                     return "SUCCESS3";
 
                 } else {

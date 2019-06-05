@@ -216,18 +216,21 @@ public class PrincipalAction extends ActionSupport implements SessionAware {
     public String registroDual() {
         if (session.get("cveUsuario") != null) {
             String sUsu = (String) session.get("cveUsuario");
+            Constantes.enviaMensajeConsola("si llego a metodo ");
         } else {
             addActionError("**** La sesión ha expirado *** favor de iniciar una nueva sesion *** ");
+            Constantes.enviaMensajeConsola("perdio sesion 1 ");
             return "SESSION";
         }
         if (session.containsKey("usuario")) {
             usuariocons = (usuarioBean) session.get("usuario");
         } else {
             addActionError("**** La sesión ha expirado *** favor de iniciar una nueva sesion *** ");
+            Constantes.enviaMensajeConsola("perdio sesion 2 ");
             return "SESSION";
         }
         try {
-
+            Constantes.enviaMensajeConsola("si llego a metodo ");
             ConsultasBusiness con = new ConsultasBusiness();
 
             ListaMunicipios = con.listaMunicipios();

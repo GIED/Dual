@@ -270,7 +270,7 @@
                                                             <div class="form-group col-lg-4">
                                                                 <label class="col-form-label text-muted " for="Municipio" >MUNICIPIO:</label>
                                                                 <div class="col-sm-auto ">
-                                                                    <s:select  name="al.CVE_MUN" id="al.CVE_MUN" list="ListaMunicipios"  listKey="ID"  listValue="MUNICIPIO"  headerKey="" headerValue="Municipio" cssClass="form-control " ></s:select>
+                                                                    <s:select  name="al.CVE_MUN" id="al.CVE_MUN" list="ListaMunicipios"  listKey="ID"  listValue="MUNICIPIO"  headerKey="" headerValue="Municipio" cssClass="selectpicker " ></s:select>
                                                                     <s:fielderror fieldName="ErrorMunicipio" cssClass="alert alert-danger" />
                                                                 </div> 
                                                             </div>      
@@ -351,9 +351,7 @@
                                                                 </div> 
                                                             </div>     
                                                             <div class="form-group col-lg-12">                                                                                     
-                                                                <a class="btn bg-success text-white" href="Javascript:Accion('RegistrarAlum')" onclick="this.onclick = function () {
-                                                                            return false
-                                                                        }">REGISTRAR ALUMNO</a>
+                                                                <a class="btn bg-success text-white" href="Javascript:Accion('RegistrarAlum')" onclick="this.onclick = function () {return false}">REGISTRAR ALUMNO</a>
                                                             </div>  
 
 
